@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkillDataCollection>
+  <Skills>
+    <Skill>
+      <SkillID>01</SkillID>
+      <SkillName>Mine</SkillName>
+      <TimeCountdown>10</TimeCountdown>
+      <UnlockAtLevel>2</UnlockAtLevel>
+    </Skill>
+    <Skill>
+      <SkillID>02</SkillID>
+      <SkillName>Freeze</SkillName>
+      <TimeCountdown>20</TimeCountdown>
+      <UnlockAtLevel>6</UnlockAtLevel>
+    </Skill>
+    <Skill>
+      <SkillID>03</SkillID>
+      <SkillName>Rocket</SkillName>
+      <TimeCountdown>30</TimeCountdown>
+      <UnlockAtLevel>11</UnlockAtLevel>
+    </Skill>
+  </Skills>
+</SkillDataCollection>

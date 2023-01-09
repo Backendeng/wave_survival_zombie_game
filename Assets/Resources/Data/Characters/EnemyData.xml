@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<EnemyDataCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Enemies>
+    <Enemy>
+      <EnemyID>01</EnemyID>
+      <EnemyName>Normal Zombie</EnemyName>
+      <Health>120</Health>
+      <Damage>15</Damage>
+      <MoveSpeed>18</MoveSpeed>
+      <AttackSpeed>25</AttackSpeed>
+      <Range>30</Range>
+      <Ability>None</Ability>
+      <CoinDrop>1</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>02</EnemyID>
+      <EnemyName>Chef Zombie</EnemyName>
+      <Health>200</Health>
+      <Damage>20</Damage>
+      <MoveSpeed>15</MoveSpeed>
+      <AttackSpeed>20</AttackSpeed>
+      <Range>30</Range>
+      <Ability>None</Ability>
+      <CoinDrop>1,2</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>03</EnemyID>
+      <EnemyName>Fireman Zombie</EnemyName>
+      <Health>180</Health>
+      <Damage>20</Damage>
+      <MoveSpeed>20</MoveSpeed>
+      <AttackSpeed>25</AttackSpeed>
+      <Range>30</Range>
+      <Ability>Can not be Freeze</Ability>
+      <CoinDrop>2,3</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>04</EnemyID>
+      <EnemyName>Diver Zombie</EnemyName>
+      <Health>140</Health>
+      <Damage>15</Damage>
+      <MoveSpeed>38</MoveSpeed>
+      <AttackSpeed>35</AttackSpeed>
+      <Range>30</Range>
+      <Ability>High move speed</Ability>
+      <CoinDrop>2,3</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>05</EnemyID>
+      <EnemyName>Punch Zombie</EnemyName>
+      <Health>250</Health>
+      <Damage>35</Damage>
+      <MoveSpeed>20</MoveSpeed>
+      <AttackSpeed>25</AttackSpeed>
+      <Range>32</Range>
+      <Ability>Attack 2 nearest units</Ability>
+      <CoinDrop>3</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>06</EnemyID>
+      <EnemyName>Bomber Zombie</EnemyName>
+      <Health>200</Health>
+      <Damage>50</Damage>
+      <MoveSpeed>17</MoveSpeed>
+      <AttackSpeed>25</AttackSpeed>
+      <Range>30</Range>
+      <Ability>Explostion when hit Unit</Ability>
+      <CoinDrop>3</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>07</EnemyID>
+      <EnemyName>Police Zombie</EnemyName>
+      <Health>250</Health>
+      <Damage>35</Damage>
+      <MoveSpeed>25</MoveSpeed>
+      <AttackSpeed>25</AttackSpeed>
+      <Range>30</Range>
+      <Ability>Explostion when dead</Ability>
+      <CoinDrop>4</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>08</EnemyID>
+      <EnemyName>Ice Punch Zombie</EnemyName>
+      <Health>300</Health>
+      <Damage>25</Damage>
+      <MoveSpeed>22</MoveSpeed>
+      <AttackSpeed>15</AttackSpeed>
+      <Range>32</Range>
+      <Ability>Freeze unit</Ability>
+      <CoinDrop>4</CoinDrop>
+    </Enemy>
+    <Enemy>
+      <EnemyID>09</EnemyID>
+      <EnemyName>Astronaut Zombie</EnemyName>
+      <Health>250</Health>
+      <Damage>20</Damage>
+      <MoveSpeed>30</MoveSpeed>
+      <AttackSpeed>30</AttackSpeed>
+      <Range>35</Range>
+      <Ability>Lock unit building</Ability>
+      <CoinDrop>5</CoinDrop>
+    </Enemy>
+  </Enemies>
+</EnemyDataCollection>
