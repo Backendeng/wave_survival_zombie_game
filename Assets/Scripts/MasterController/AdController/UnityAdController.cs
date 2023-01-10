@@ -47,38 +47,38 @@ public class UnityAdController : MonoBehaviour
             this.onComplete = onComplete;
         }
 
-        ShowOptions options = new ShowOptions();
-        options.resultCallback = AdCallbackhandler;
+//        ShowOptions options = new ShowOptions();
+//        options.resultCallback = AdCallbackhandler;
         
-        if (Advertisement.IsReady(Master.Ad.zone))
-        {
-            Debug.Log("Show Unity Ad");
-            Advertisement.Show(Master.Ad.zone, options);
-        }
-        else
-        {
-            if (this.onComplete != null)
-            {
-                onComplete();
-                onComplete = null;
-            }
-        }
+//        if (Advertisement.IsReady(Master.Ad.zone))
+//        {
+//            Debug.Log("Show Unity Ad");
+//            Advertisement.Show(Master.Ad.zone, options);
+//        }
+//        else
+//        {
+//            if (this.onComplete != null)
+//            {
+//                onComplete();
+//                onComplete = null;
+//            }
+//        }
     }
 
-    void AdCallbackhandler(ShowResult result)
+    void AdCallbackhandler()
     {
-        switch (result)
-        {
-            case ShowResult.Finished:
-                EventAd();
-                break;
-            case ShowResult.Skipped:
-                EventAd();
-                break;
-            case ShowResult.Failed:
-                EventAd();
-                break;
-        }
+//        switch (result)
+//        {
+//            case ShowResult.Finished:
+//                EventAd();
+//                break;
+//            case ShowResult.Skipped:
+//                EventAd();
+//                break;
+//            case ShowResult.Failed:
+//                EventAd();
+//                break;
+//        }
     }
 
     void EventAd()
@@ -93,6 +93,7 @@ public class UnityAdController : MonoBehaviour
 
     public bool isReady()
     {
-        return Advertisement.IsReady(Master.Ad.zone);
+//        return Advertisement.IsReady(Master.Ad.zone);
+		return false;
     }
 }
