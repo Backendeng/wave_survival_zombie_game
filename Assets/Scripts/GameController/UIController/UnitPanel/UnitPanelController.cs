@@ -214,6 +214,16 @@ public class UnitPanelController : MonoBehaviour
         UpgradeStats.listUpgradeStatsDetail["Range"].upgradeButtonPanel.alpha = 1f;
         UpgradeStats.listUpgradeStatsDetail["Range"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = true;
 
+		UpgradeStats.listUpgradeStatsDetail["Damage"].alertLabel.gameObject.SetActive(false);
+		UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeProgress.SetActive(true);
+		UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeButtonPanel.alpha = 1f;
+		UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = true;
+
+		UpgradeStats.listUpgradeStatsDetail["Health"].alertLabel.gameObject.SetActive(false);
+		UpgradeStats.listUpgradeStatsDetail["Health"].upgradeProgress.SetActive(true);
+		UpgradeStats.listUpgradeStatsDetail["Health"].upgradeButtonPanel.alpha = 1f;
+		UpgradeStats.listUpgradeStatsDetail["Health"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = true;
+
         //set stats and upgrade info
         UnitDataController.UnitUpgradeData unitUpgradeData = Master.UnitData.GetUnitUpgradeDataByID(unitSelectedID);
         List<float> listStatsValue = new List<float>
@@ -255,6 +265,21 @@ public class UnitPanelController : MonoBehaviour
             UpgradeStats.listUpgradeStatsDetail["Range"].upgradeButtonPanel.alpha = 0.6f;
             UpgradeStats.listUpgradeStatsDetail["Range"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;
             UpgradeStats.listUpgradeStatsDetail["Range"].starRequire.text = "0";
+        }
+
+        if (unitData.UnitID == "02") {
+            UpgradeStats.listUpgradeStatsDetail["Damage"].alertLabel.text = "This Unit can not upgrade this item";
+            UpgradeStats.listUpgradeStatsDetail["Damage"].alertLabel.gameObject.SetActive(true);
+            UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeProgress.SetActive(false);
+            UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeButtonPanel.alpha = 0.6f;
+            UpgradeStats.listUpgradeStatsDetail["Damage"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;
+            UpgradeStats.listUpgradeStatsDetail["Damage"].starRequire.text = "0";
+            UpgradeStats.listUpgradeStatsDetail["Health"].alertLabel.text = "This Unit can not upgrade this item";
+            UpgradeStats.listUpgradeStatsDetail["Health"].alertLabel.gameObject.SetActive(true);
+            UpgradeStats.listUpgradeStatsDetail["Health"].upgradeProgress.SetActive(false);
+            UpgradeStats.listUpgradeStatsDetail["Health"].upgradeButtonPanel.alpha = 0.6f;
+            UpgradeStats.listUpgradeStatsDetail["Health"].upgradeButtonPanel.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;
+            UpgradeStats.listUpgradeStatsDetail["Health"].starRequire.text = "0";
         }
 
 

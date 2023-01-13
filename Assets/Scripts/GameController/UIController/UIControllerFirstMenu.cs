@@ -41,26 +41,6 @@ public class UIControllerFirstMenu : UIController
                     SceneManager.LoadScene("Menu");
                 });
                 break;
-            case "Button_Rate":
-                if (Master.instance.platform == Master.Platform.Android)
-                {
-                    Application.OpenURL(Master.instance.linkGooglePlay);
-                }
-                else
-                {
-                    Application.OpenURL(Master.instance.linkAppStore);
-                }
-                break;
-            case "Button_More":
-                if (Master.instance.platform == Master.Platform.Android)
-                {
-                    Application.OpenURL(Master.instance.linkGooglePlayDeveloperStore);
-                }
-                else
-                {
-                    Application.OpenURL(Master.instance.linkAppsStoreDeveloperStore);
-                }
-                break;
 
             case "Button_Exit":
                 ShowDialog(UIController.Dialog.ListDialogs.ExitGameDialog);

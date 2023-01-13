@@ -1,10 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\EnemiesEditor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController\CharacterController\UnitController\Unit02.cs">
     <Files>
       <File FileName="Assets\Editor\EnemiesEditor.cs" Line="1" Column="1" />
       <File FileName="Assets\NGUI\Scripts\Interaction\UIButton.cs" Line="1" Column="1" />
       <File FileName="Assets\NGUI\ReadMe - 3.9.6d.txt" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MasterController\AdController\UnityAdController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController\CharacterController\UnitController\Unit02.cs" Line="15" Column="30" />
+      <File FileName="Assets\Scripts\GameController\CharacterController\UnitController\Unit01.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController\CharacterController\UnitController\Unit03.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController\UIController\SkillPanelController\SkillPanelController.cs" Line="93" Column="42" />
+      <File FileName="Assets\Scripts\GameController\CharacterController\UnitController\UnitController.cs" Line="189" Column="41" />
+      <File FileName="Assets\Scripts\GameController\CharacterController\EnemyController\EnemyController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

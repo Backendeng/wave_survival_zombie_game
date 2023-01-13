@@ -19,7 +19,7 @@
       <UnitID>02</UnitID>
       <UnitName>Tanker</UnitName>
       <Health>200</Health>
-      <Damage>10</Damage>
+      <Damage>0</Damage>
       <AttackSpeed>30</AttackSpeed>
       <Range>30</Range>
       <Critical>2</Critical>

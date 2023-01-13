@@ -50,8 +50,6 @@ public class Master : MonoBehaviour
     }
     [HideInInspector]
     public Platform platform;
-    public string linkGooglePlay;
-    public string linkAppStore;
     public string linkGooglePlayDeveloperStore;
     public string linkAppsStoreDeveloperStore;
     public string linkInMarket;

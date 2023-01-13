@@ -22,14 +22,6 @@ public class RatingDialog : DialogController
         PlayerPrefs.SetInt("isClickedRating", 1);
         PlayerPrefs.Save();
 
-        if (Master.instance.platform == Master.Platform.Android)
-        {
-            Application.OpenURL(Master.instance.linkGooglePlay);
-        }
-        else
-        {
-            Application.OpenURL(Master.instance.linkAppStore);
-        }
         Close();
     }
 

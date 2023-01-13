@@ -11,15 +11,17 @@ public class Unit02 : UnitController
         if (action.Dead || action.Shoot || !status.IsCanShoot || status.IsFreezing) return;
 
         status.CurrentShoot++;
-        //  unitStatus.CurrentAmmo--;
-        SetStatus("Shoot");
-        animator.speed = 0.5f;
+//          unitStatus.CurrentAmmo--;
+//        SetStatus("Shoot");
+//        animator.speed = 0.5f;
         SetTimeToShoot();
+//
+//        PlayAnimation("Shoot", () =>
+//        {
+//            Idle();
+//        });
 
-        PlayAnimation("Shoot", () =>
-        {
-            Idle();
-        });
+
         CreateBullet(0.5f);
 
 
