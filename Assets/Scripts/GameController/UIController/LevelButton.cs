@@ -109,23 +109,30 @@ public class LevelButton : MonoBehaviour
 
     public void onClick()
     {
+        Debug.Log(1);
         Master.PlaySoundButtonClick();
+        Debug.Log(2);
 
         if (Master.Stats.Energy > 0)
         {
+            Debug.Log(3);
             Master.Tutorial.CheckAndContinueNextStepTutorial(TutorialController.TutorialsIndex.BuildUnitInGameplay, 1);
+            Debug.Log(4);
 
-            Master.Ad.CheckAndShowAd(() =>
-            {
+            // Master.Ad.CheckAndShowAd(() =>
+            // {
+                Debug.Log(5);
                 Master.UI.Transition(() =>
                 {
+                    Debug.Log(6);
                     Master.LevelData.currentLevel = levelIndex;
                     Application.LoadLevel("Play");
                 });
-            });
+            // });
         }
         else
         {
+            Debug.Log(7);
             Master.UIMenu.ShowDialog(UIController.Dialog.ListDialogs.FillEnergyDialog, 0.3f, new string[] { "GoToLevel", levelIndex.ToString() });
         }
 

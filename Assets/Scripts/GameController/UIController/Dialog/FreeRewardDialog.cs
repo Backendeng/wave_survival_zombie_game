@@ -65,12 +65,12 @@ public class FreeRewardDialog : DialogController
 
     void SetShareFacebookReward()
     {
-        if (!FreeRewardController.IsSharedFacebook())
-        {
-            currentShareFacebookReward = FreeRewardController.GetReward(1);
-            shareFacebookRewardGemLabel.text = currentShareFacebookReward[0].ToString();
-            shareFacebookRewardStarLabel.text = currentShareFacebookReward[1].ToString();
-        }
+        // if (!FreeRewardController.IsSharedFacebook())
+        // {
+        //     currentShareFacebookReward = FreeRewardController.GetReward(1);
+        //     shareFacebookRewardGemLabel.text = currentShareFacebookReward[0].ToString();
+        //     shareFacebookRewardStarLabel.text = currentShareFacebookReward[1].ToString();
+        // }
     }
 
     void CheckTime()
@@ -99,21 +99,21 @@ public class FreeRewardDialog : DialogController
             getRandomRewardStatusLabel.text = ((minute < 10) ? "0" + minute.ToString() : minute.ToString()) + ":" + ((second < 10) ? "0" + second.ToString() : second.ToString());
         }
 
-        //for shared facebook
-        if (FreeRewardController.IsSharedFacebook())
-        {
-            valuesShareFacebookReward.SetActive(false);
-            titleShareFacbookReward.gameObject.SetActive(true);
-            shareFacebookButton.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            shareFacebookButton.SetState(UIButtonColor.State.Disabled, true);
-        }
-        else
-        {
-            valuesShareFacebookReward.SetActive(true);
-            titleShareFacbookReward.gameObject.SetActive(false);
-            shareFacebookButton.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-            getRandomRewardButton.SetState(UIButtonColor.State.Normal, true);
-        }
+        // //for shared facebook
+        // if (FreeRewardController.IsSharedFacebook())
+        // {
+        //     valuesShareFacebookReward.SetActive(false);
+        //     titleShareFacbookReward.gameObject.SetActive(true);
+        //     shareFacebookButton.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        //     shareFacebookButton.SetState(UIButtonColor.State.Disabled, true);
+        // }
+        // else
+        // {
+        //     valuesShareFacebookReward.SetActive(true);
+        //     titleShareFacbookReward.gameObject.SetActive(false);
+        //     shareFacebookButton.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        //     getRandomRewardButton.SetState(UIButtonColor.State.Normal, true);
+        // }
     }
 
     public void GetRewardButton_OnClick()
@@ -140,17 +140,17 @@ public class FreeRewardDialog : DialogController
     public void GetFacebookShareRewardButton_OnClick()
     {
         Master.PlaySoundButtonClick();
-        Close(() =>
-        {
-            Master.Social.Facebook.ShareLink("", "", "", "", () =>
-            {
-                Master.Stats.Gem += currentShareFacebookReward[0];
-                Master.Stats.Star += currentShareFacebookReward[1];
-                Master.QuestData.IncreaseProgressValue("07");
-                FreeRewardController.SetDatTimeGetShareFacebookReward();
-                Master.UIMenu.ShowDialog("GotRewardDialog", 0.3f, new string[] { currentShareFacebookReward[0].ToString(), currentShareFacebookReward[1].ToString() });
-            });
-        });
+        // Close(() =>
+        // {
+        //     Master.Social.Facebook.ShareLink("", "", "", "", () =>
+        //     {
+        //         Master.Stats.Gem += currentShareFacebookReward[0];
+        //         Master.Stats.Star += currentShareFacebookReward[1];
+        //         Master.QuestData.IncreaseProgressValue("07");
+        //         FreeRewardController.SetDatTimeGetShareFacebookReward();
+        //         Master.UIMenu.ShowDialog("GotRewardDialog", 0.3f, new string[] { currentShareFacebookReward[0].ToString(), currentShareFacebookReward[1].ToString() });
+        //     });
+        // });
     }
 
 

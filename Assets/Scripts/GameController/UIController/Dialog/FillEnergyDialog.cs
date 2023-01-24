@@ -76,15 +76,15 @@ public class FillEnergyDialog : DialogController
 
     public void InviteFriendButton_OnClick()
     {
-        Master.Social.Facebook.AppInvite(() =>
-        {
-            Master.Audio.PlaySound("snd_buy");
-            if (Master.Stats.Energy < Master.Stats.MaxEnergy)
-            {
-                Master.Stats.Energy++;
-            }
-            Close();
-        });
+        // Master.Social.Facebook.AppInvite(() =>
+        // {
+        //     Master.Audio.PlaySound("snd_buy");
+        //     if (Master.Stats.Energy < Master.Stats.MaxEnergy)
+        //     {
+        //         Master.Stats.Energy++;
+        //     }
+        //     Close();
+        // });
     }
 
     public void CloseButton_OnClick()

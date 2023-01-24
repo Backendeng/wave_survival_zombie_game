@@ -39,7 +39,6 @@ public class SocialController : MonoBehaviour
 
     GameObject askShareDialog;
 
-    public FacebookController Facebook;
     
 
     void Awake()
@@ -139,8 +138,7 @@ public class SocialController : MonoBehaviour
 
     public void ShareFacebook(bool attackPicture = true)
     {
-        Facebook.ShareLink("http://google.com", "Share Facebook Zombie Defense", "Check Share Facebook Zombie Defense", "https://i.imgsafe.org/30aacd1.png");
-        Debug.Log("Share Facebook!");
+        
         /*
         Master.Gameplay.DisableTouchGameplay();
         Master.UI.DisableTouchUI();
@@ -196,7 +194,6 @@ public class SocialController : MonoBehaviour
         snap.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         snap.Apply();
 
-        UM_ShareUtility.FacebookShare(GetTextShare(), snap);
        // Master.Gameplay.EnableTouchGameplay();
      //   Master.UI.EnableTouchUI();
     }
@@ -208,7 +205,7 @@ public class SocialController : MonoBehaviour
         snap.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         snap.Apply();
 
-        UM_ShareUtility.TwitterShare(GetTextShare(), snap);
+        // UM_ShareUtility.TwitterShare(GetTextShare(), snap);
       //  Master.Gameplay.EnableTouchGameplay();
       //  Master.UI.EnableTouchUI();
     }

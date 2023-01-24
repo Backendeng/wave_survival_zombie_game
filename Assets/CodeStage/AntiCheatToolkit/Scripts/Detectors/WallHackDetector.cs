@@ -710,7 +710,7 @@ namespace CodeStage.AntiCheat.Detectors
 							if (renderTexture == null)
 							{
 								renderTexture = new RenderTexture(RENDER_TEXTURE_SIZE, RENDER_TEXTURE_SIZE, 24, RenderTextureFormat.ARGB32, RenderTextureReadWrite.Default);
-								renderTexture.generateMips = false;
+								renderTexture.autoGenerateMips = false;
 								renderTexture.filterMode = FilterMode.Point;
 								renderTexture.Create();
 							}
@@ -783,7 +783,7 @@ namespace CodeStage.AntiCheat.Detectors
 								wfCamera.depth = 0;
 								wfCamera.renderingPath = RenderingPath.Forward;
 								wfCamera.useOcclusionCulling = false;
-								wfCamera.hdr = false;
+								wfCamera.allowHDR = false;
 								wfCamera.targetTexture = renderTexture;
 								wfCamera.enabled = false;
 							}

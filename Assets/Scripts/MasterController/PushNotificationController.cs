@@ -42,7 +42,7 @@ public class PushNotificationController : MonoBehaviour
 
     public void CancelAllNotification()
     {
-        AndroidNotificationManager.Instance.CancelAllLocalNotifications();
+        // AndroidNotificationManager.Instance.CancelAllLocalNotifications();
     }
 
     public void SetEnergyNotification()

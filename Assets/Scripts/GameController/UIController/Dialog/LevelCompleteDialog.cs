@@ -288,8 +288,8 @@ public class LevelCompleteDialog : DialogController
         if (!isCanClick) return;
 
         Master.PlaySoundButtonClick();
-        Master.Social.Facebook.ShareLink("", "I have completed level " + Master.LevelData.currentLevel + " | Special Squad vs Zombies", "Let's play \"Special Squad vs Zombies\" and lead your Special Squad to defeat the Zombies!!!",
-            Master.Social.Facebook.linkImageShareLevelComplete);
+        // Master.Social.Facebook.ShareLink("", "I have completed level " + Master.LevelData.currentLevel + " | Special Squad vs Zombies", "Let's play \"Special Squad vs Zombies\" and lead your Special Squad to defeat the Zombies!!!",
+            // Master.Social.Facebook.linkImageShareLevelComplete);
     }
 
     public void ShareTwitterButton_OnClick()

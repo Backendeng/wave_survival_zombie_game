@@ -32,10 +32,10 @@ public class IAPController : MonoBehaviour
     {
         if (!Master.Ad.isRemoveAd)
         {
-            UM_InAppPurchaseManager.OnPurchaseFlowFinishedAction += OnPurchaseFlowFinishedAction;
-            UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnConnectFinished;
-            UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnBillingConnectFinishedAction;
-            UM_InAppPurchaseManager.Instance.Init();
+            // UM_InAppPurchaseManager.OnPurchaseFlowFinishedAction += OnPurchaseFlowFinishedAction;
+            // UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnConnectFinished;
+            // UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnBillingConnectFinishedAction;
+            // UM_InAppPurchaseManager.Instance.Init();
         }
     }
 
@@ -48,68 +48,68 @@ public class IAPController : MonoBehaviour
     {
         this.onPurchaseComplete = onComplete;
         this.onPurchaseFail = onFail;
-        UM_InAppPurchaseManager.Instance.Purchase(idProduct);
+        // UM_InAppPurchaseManager.Instance.Purchase(idProduct);
     }
 
-    private void OnConnectFinished(UM_BillingConnectionResult result)
+    private void OnConnectFinished()
     {
 
-        if (result.isSuccess)
-        {
-        }
-        else
-        {
-        }
+        // if (result.isSuccess)
+        // {
+        // }
+        // else
+        // {
+        // }
     }
 
-    private void OnPurchaseFlowFinishedAction(UM_PurchaseResult result)
+    private void OnPurchaseFlowFinishedAction()
     {
-        if (result.isSuccess)
-        {
-            Debug.Log("Purchase Success!");
-            if (onPurchaseComplete != null)
-            {
-                onPurchaseComplete();
-                onPurchaseComplete = null;
-            }
-        }
-        else
-        {
-            Debug.Log("Purchase Fail!");
-            if (onPurchaseFail != null)
-            {
-                onPurchaseFail();
-                onPurchaseFail = null;
-            }
-        }
+        // if (result.isSuccess)
+        // {
+        //     Debug.Log("Purchase Success!");
+        //     if (onPurchaseComplete != null)
+        //     {
+        //         onPurchaseComplete();
+        //         onPurchaseComplete = null;
+        //     }
+        // }
+        // else
+        // {
+        //     Debug.Log("Purchase Fail!");
+        //     if (onPurchaseFail != null)
+        //     {
+        //         onPurchaseFail();
+        //         onPurchaseFail = null;
+        //     }
+        // }
     }
 
-    private void OnBillingConnectFinishedAction(UM_BillingConnectionResult result)
+    private void OnBillingConnectFinishedAction()
     {
-        if (result.isSuccess)
-        {
-            Debug.Log("Billing Connected");
-        }
-        else
-        {
-            Debug.Log("Billing Failed to connect");
-        }
+        // if (result.isSuccess)
+        // {
+        //     Debug.Log("Billing Connected");
+        // }
+        // else
+        // {
+        //     Debug.Log("Billing Failed to connect");
+        // }
     }
 
 
     public void AddProduct(string productID, string productSKU, bool isConsumable)
     {
-        UM_InAppProduct checkProduct = UltimateMobileSettings.Instance.GetProductById(productID);
-        if (checkProduct == null)
-        {
-            UM_InAppProduct product = new UM_InAppProduct();
-            product.id = productID;
-            product.AndroidId = productSKU;
-            product.IOSId = productSKU;
-            product.WP8Id = productSKU;
-            product.IsConsumable = isConsumable;
-            UltimateMobileSettings.Instance.AddProduct(product);
-        }
+        // UM_InAppProduct checkProduct = UltimateMobileSettings.Instance.GetProductById(productID);
+        // if (checkProduct == null)
+        // {
+        //     UM_InAppProduct product = new UM_InAppProduct();
+        //     product.id = productID;
+        //     product.AndroidId = productSKU;
+        //     product.IOSId = productSKU;
+        //     product.WP8Id = productSKU;
+        //     product.IsConsumable = isConsumable;
+        //     UltimateMobileSettings.Instance.AddProduct(product);
+        // }
     }
 
 }
